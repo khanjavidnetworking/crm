@@ -2,13 +2,9 @@
 // include("header.php");
 include "dbconnection.php";
 include "functions.php";
-// addlead();
-
-
-
+// addlead(); 
 if (isset($_POST['create_lead'])) {
     // echo $_POST['comment_author']; this line is for testing 
-
 
     $CN = $_POST['cname'];
     $CNO = $_POST['cnumber'];
@@ -32,8 +28,8 @@ if (isset($_POST['create_lead'])) {
              <h3 class="text-aling:center">Data has been uploaded successfully</h3>
             
             </div>';
-        header("location:dashboard.php");
-        echo "data Submitted Successfully By Sanjay";
+                        
+        header("location:dashboard.php");      
 
     } else {
         die("Failed to comment" . mysqli_error($con));
@@ -64,13 +60,11 @@ if (isset($_POST['create_lead'])) {
                     <td>Account Manager</td>
                     <td>Type of Lead</td>
                     <td>Description</td>
-                    <!-- <td>Post_content</td> -->
-                     
+                    <!-- <td>Post_content</td> --> 
                     <td>Date</td>
                     <td>Approve</td>
                     <td>UnApprove</td>
                     <td>Edit</td>
-                    
                     
                     <!-- <td>Image</td> -->
                     <!-- <td>Role</td> -->
@@ -89,10 +83,7 @@ if (isset($_POST['create_lead'])) {
 
            
             </tbody>
-        </div>
-
-
-    
+        </div>    
 <form action="" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="text" class="form-label">Customer Name</label>

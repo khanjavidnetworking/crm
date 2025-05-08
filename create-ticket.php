@@ -27,8 +27,6 @@ $a=mysqli_query($con,"insert into ticket(ticket_id,email_id,subject,task_type,pr
 if($a)
 {
 echo "<script>alert('Ticket Genrated');</script>";
-}{
-    echo "<script>alert('Your application is under review');</script>";
 }
 }
 ?>
