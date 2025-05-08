@@ -91,11 +91,12 @@ if (isset($_POST['create_lead'])) {
     </div>
     <div class="mb-3">
         <label for="text" class="form-label">Customer contact Number</label>
-        <input type="number " class="form-control" name="cnumber"  aria-describedby="emailHelp" maxlength="10" required=" ">
+        <input type="number" class="form-control" name="cnumber"  aria-describedby="emailHelp" maxlength="10" required=" ">
     </div>
     <div class="mb-3">
         <label for="text" class="form-label">Account Manager</label>
-        <input type="text" class="form-control" name="accountm" aria-describedby="emailHelp" required=" ">
+        <input type="text" class="form-control" name="accountm"  aria-describedby="emailHelp" required=" ">
+        <!-- value="<?php echo $user_fristname; ?>"  -->
     </div>
     <!-- <div class="mb-3">
         <label for="text" class="form-label">Type Of Lead</label>
