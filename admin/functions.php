@@ -14,6 +14,7 @@ function viewAlllleads()
            $user_name = $row_user['CN'];
            $user_password= $row_user['CNO'];
            $user_fristname = $row_user['AM'];
+           $user_lead = $row_user['TL'];
            $user_lastname = $row_user['Description'];
            $user_email= $row_user['Date'];
 ?>
@@ -23,6 +24,7 @@ function viewAlllleads()
                
                 <td><?php echo $user_password; ?></td>
                 <td><?php echo $user_fristname; ?></td>
+                <td><?php echo $user_lead; ?></td>
 
                 <td><?php echo $user_lastname; ?></td>
                 <td><?php echo $user_email; ?></td>

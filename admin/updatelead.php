@@ -39,7 +39,7 @@ if (isset($_POST['update_lead'])) {
     $user_password = $_POST['password']; //customer Number
     $user_fristname = $_POST['userfname'];  //account manager
     // $user_fristname = $_POST['userfname'];
-    // $user_lastname = $_POST['userlname'];
+    $user_lastname = $_POST['TL'];
     $user_email = $_POST['email'];  //description
     $user_image = $_POST['user_image'];  //date
     // $user_role = $_POST['role'];
@@ -56,7 +56,7 @@ if (isset($_POST['update_lead'])) {
         // $crp_password = crypt($user_password,$ransalt); just disabled 7/5/25
 
     $update_query = "UPDATE leads SET  CN ='$user_name', CNO='$user_password',
-        AM='$user_fristname', Description='$user_email',Date='$user_image' WHERE id = $id ";
+        AM='$user_fristname',TL='$user_lastname', Description='$user_email',Date='$user_image' WHERE id = $id ";
 
     $result_update_user = mysqli_query($con, $update_query);
     if ($result_update_user) {
@@ -100,7 +100,7 @@ if (isset($_POST['update_lead'])) {
                 value="<?php echo $user_name; ?>" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
-                <label for="text" class="form-label">Customer Number</label>
+                <label for="number" class="form-label">Customer Number</label>
                 <input type="text" class="form-control" name="password"  
                 value="<?php echo $user_password; ?>" aria-describedby="emailHelp">
             </div>
@@ -109,6 +109,18 @@ if (isset($_POST['update_lead'])) {
                 <input type="text" class="form-control" name="userfname" value="<?php echo $user_fristname; ?>"
                  aria-describedby="emailHelp">
             </div>
+            <div class="form-group">
+                                        <label class="col-md-3 col-xs-12 control-label">Leads</label>
+                                        <div class="col-md-6 col-xs-12">                                                                                            
+                                            <select name="TL" class="form-control select">
+                                            <option value="">Choose your Type of Lead</option>
+                                                <option value="Hot">Important Hot</option>
+                                                <option value="Warm">Urgent Warm</option>
+                                                <option value="Cold">Cold </option>
+                                                <option value="Follow-up">Follow-up</option>
+                                            </select>
+                                           </div>
+                                    </div>
            
               
             <div class="mb-3">

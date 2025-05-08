@@ -27,6 +27,8 @@ $a=mysqli_query($con,"insert into ticket(ticket_id,email_id,subject,task_type,pr
 if($a)
 {
 echo "<script>alert('Ticket Genrated');</script>";
+}{
+    echo "<script>alert('Your application is under review');</script>";
 }
 }
 ?>
@@ -110,9 +112,9 @@ echo "<script>alert('Ticket Genrated');</script>";
                                             <select  name="tasktype" class="form-control select" required>
                                                 <option> Select your Task Type</option>
                                                 <option value="billing">Billing</option>
-                                                <option value="ot1">Option 1</option>
-                                                <option value="ot2">Option 2</option>
-                                                <option value="ot3">Option 3</option>
+                                                <option value="ot1">Server</option>
+                                                <option value="ot2">Storage </option>
+                                                <option value="ot3">Cloud</option>
                                             </select>
                                            </div>
                                     </div>

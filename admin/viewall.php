@@ -25,6 +25,7 @@ include "dbconnection.php";
                     <td>customer Name</td>
                     <td>customer Number</td>
                     <td>Account Manager</td>
+                    <td>Type Of Lead</td>
                     <td>Description</td>
                     <!-- <td>Post_content</td> -->
                      
