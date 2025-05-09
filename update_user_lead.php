@@ -1,10 +1,11 @@
 <?php
-
+session_start();
+// $_SESSION['user_id'] = 1;
 // include "../includesadmin/header.php";
 include "dbconnection.php";
 include "functions.php";
-approveusers();
-unapproveusers();
+// approveusers();
+// unapproveusers();
 
 // updateUser();
 
@@ -35,13 +36,13 @@ if(isset($_GET['update_lead'])){
 if (isset($_POST['update_lead'])) {
     
     
-    $user_name = $_POST['username'];  //Customer Name
-    $user_password = $_POST['password']; //customer Number
-    $user_fristname = $_POST['userfname'];  //account manager
+    $user_name = $_POST['username'];        //Customer Name
+    $user_password = $_POST['password'];    //customer Number
+    $user_fristname = $_POST['userfname'];      //account manager
     // $user_fristname = $_POST['userfname'];
     $user_lastname = $_POST['TL'];
-    $user_email = $_POST['email'];  //description
-    $user_image = $_POST['user_image'];  //date
+    $user_email = $_POST['email'];            //description
+    $user_image = $_POST['user_image'];        //date
     // $user_role = $_POST['role'];
     // $ransalt = $_POST['ransalt'];
     // $comment_date = $_POST['date'];
@@ -89,7 +90,7 @@ if (isset($_POST['update_lead'])) {
 
 <body>
     <?php
-    updateUser();
+    // updateUser();
     ?>
     <div class="container">
     

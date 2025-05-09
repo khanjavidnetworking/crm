@@ -48,8 +48,40 @@ include "dbconnection.php";
            
             viewAlllleads();
                 ?>
-                  <?php  echo '<h5 ><a href="../leads.php">Add New Lead</a></h5>' ?>
+                  <!-- <?php  echo '<h5 ><a href="../leads.php">Add New Lead</a></h5>' ?>  -->
+                  <div style="text-align: left; margin: 20px;">
+    <a href="../leads.php"
+       style="background-color: #f39c12; color: white; padding: 10px 20px; 
+              text-decoration: none; border: none; border-radius: 5px; 
+              display: inline-block;">
+        Add New Lead
+    </a>
+</div>
+                  <!-- <div style="text-align: right; margin: 20px;">
+    <a href="export_csv.php" 
+       style="background-color: #4CAF50; color: white; padding: 10px 20px; 
+              text-decoration: none; border-radius: 5px; border: none; 
+              display: inline-block;">
+        Download CSV
+    </a>
+</div> -->
+<div style="text-align: right; margin: 20px;">
+    <!-- Import Button -->
+    <a href="import_file.php" 
+       style="background-color: #2196F3; color: white; padding: 10px 20px; 
+              text-decoration: none; border-radius: 5px; border: none; 
+              display: inline-block; margin-right: 10px;">
+        Import File
+    </a>
 
+    <!-- Export Button -->
+    <a href="export_csv.php" 
+       style="background-color: #4CAF50; color: white; padding: 10px 20px; 
+              text-decoration: none; border-radius: 5px; border: none; 
+              display: inline-block;">
+        Export CSV
+    </a>
+</div>
            
             </tbody>
         </div>
