@@ -20,6 +20,7 @@ if (isset($_POST['import'])) {
             $account_manager = mysqli_real_escape_string($con, $data[2]);
             $type_of_lead    = mysqli_real_escape_string($con, $data[3]);
             $description     = mysqli_real_escape_string($con, $data[4]);
+            $date =
             $lead_date       = mysqli_real_escape_string($con, $data[5]);
 
             $query = "INSERT INTO leads (CN, CNO, AM, TL, Description, Date)
