@@ -31,7 +31,7 @@ $result = mysqli_query($con, "SELECT * FROM leads ORDER BY id DESC");
 <!-- HEADER -->
 <div style="background: linear-gradient(to right, #003366, #3399ff); color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
     <div style="display: flex; align-items: center;">
-        <img src="logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+        <img src="logo.jpeg" alt="Logo" style="height: 40px; margin-right: 10px;">
         <span style="font-size: 24px; font-weight: bold;">AIPL CRM</span>
     </div>
     <div style="font-size: 28px; font-weight: bold;">View All Leads</div>
