@@ -2,6 +2,8 @@
 include "functions.php";
 // include "../includesadmin/header.php";
 include "dbconnection.php";
+
+
 ?>
 
 <!DOCTYPE html>
@@ -91,8 +93,8 @@ updateDateTime();
                     <!-- <td>Post_content</td> -->
                      
                     <td>Date</td>
-                    <td>Approve</td>
-                    <td>UnApprove</td>
+                    <!-- <td>Approve</td> -->
+                    <!-- <td>UnApprove</td> -->
                     <td>Edit</td>
                     
                     
@@ -240,6 +242,9 @@ updateDateTime();
         </div>
 
     </table>
+
+    <!-- Page count at all pages     -->
+     
     
 
 

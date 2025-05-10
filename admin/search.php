@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     <title>Search Leads</title>
 </head>
 <body>
-    <h2>Search Leads</h2>
+    <!-- <h2>Search Leads</h2>
     <a href="home.php" style="
     display: inline-block;
     padding: 8px 16px;
@@ -62,7 +62,65 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     font-weight: bold;
 ">
     Home
-</a>
+</a> -->
+
+
+
+<!-- HEADER SECTION -->
+<div style="
+    background: linear-gradient(to right, #003366, #3399ff);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+">
+
+    <!-- LEFT: Logo + AIPL CRM -->
+    <div style="display: flex; align-items: center;">
+        <img src="logo.jpeg" alt="Logo" style="height: 40px; margin-right: 10px;">
+        <span style="font-size: 24px; font-weight: bold;">AIPL CRM</span>
+    </div>
+
+    <!-- CENTER: Page Title -->
+    <div style="text-align: center; flex: 1;">
+        <span style="font-size: 28px; font-weight: bold; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
+            Search  Leads
+        </span>
+    </div>
+
+    <!-- RIGHT: Current Date & Time -->
+    <div style="text-align: right; font-size: 14px;">
+        <span id="datetime"></span>
+    </div>
+</div>
+
+<!-- JAVASCRIPT FOR LIVE DATE & TIME -->
+<script>
+function updateDateTime() {
+    const now = new Date();
+    const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+    const dateStr = now.toLocaleDateString('en-US', options);
+    const timeStr = now.toLocaleTimeString('en-US');
+    document.getElementById('datetime').textContent = dateStr + ' | ' + timeStr;
+}
+setInterval(updateDateTime, 1000);
+updateDateTime();
+</script>
+<a href="home.php" style="
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #17a2b8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+     margin-bottom: 5px;
+     margin-top: 5px;     ">
+    Home
+</a> 
 
 
     <form method="GET" style="margin-bottom: 20px;">

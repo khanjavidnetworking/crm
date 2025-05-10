@@ -36,8 +36,7 @@ function viewAlllleads()
                 '<td>
                     
                 
-                <button class="btn btn-primary"><a href="updatelead.php?update_lead=' . $user_id . ' " class="text-light">Approve</a></button></td><td>
-                <button class="btn btn-primary"><a href="updatelead.php?update_lead=' . $user_id . ' " class="text-light">unApprove</a></button></td><td>    
+                    
                 <button class="btn btn-primary"><a href="updatelead.php?update_lead=' . $user_id . ' " class="text-light">Edit</a></button></td><td>
 
              
